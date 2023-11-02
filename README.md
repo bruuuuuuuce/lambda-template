@@ -5,6 +5,22 @@ a single `src` directory, without needing to nest multiple build files. Esbuild 
 minify and optimize the lambda bundle to reduce cold starts and optimize runtimes. There are also examples deploying
 these lambdas via `cdk` and `serverless`
 
+## Folder Structure
+
+```text
+src
+├── common
+│   └── logger.ts
+├── products
+|   └── handler.ts
+└── users
+    └── handler.ts
+```
+
+Each directory inside the src directory gets bundled as its own lambda, except the common directory. There are 2 lambda assets, 
+a users.zip and a products.zip. The common directory is an exception which does not get bundled as its own asset. It has 
+code that gets reused across the lambdas.
+
 ## Building
 
 To build the lambdas inside this repository, you can just run
