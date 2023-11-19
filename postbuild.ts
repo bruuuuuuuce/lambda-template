@@ -10,7 +10,7 @@ fs.readdirSync(path.join(__dirname, functionsDir))
       'ls -lah',
       `pushd dist/${entry}`,
       `echo "zipping ${entry} lambda"`,
-      `zip -R ${entry}.zip *.js`,
+      `zip -R ${entry}.zip *.js *.map`,
       'popd',
     ];
     execSync(commands.join(' && '), {
