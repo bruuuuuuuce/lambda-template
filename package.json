@@ -17,7 +17,7 @@
     "@types/aws-lambda": "^8.10.125",
     "@types/lambda-log": "^3.0.2",
     "esbuild": "^0.19.5",
-    "serverless": "^3.36.0",
+    "serverless": "^4.43.0",
     "serverless-better-credentials": "^2.0.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
