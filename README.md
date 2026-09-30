@@ -59,4 +59,6 @@ into its own lambda.
 First run `npm i` to install all required dependencies.
 
 To deploy the example lambdas via `cdk` run `AWS_PROFILE=<profile> npm run cdk-deploy`.
-To deploy via the `serverless` framework run `AWS_PROFILE=<profile> npm run serverless-deploy`.
+To deploy via the `serverless` framework, first authenticate with Serverless Framework v4 using
+`serverless login` or `SERVERLESS_ACCESS_KEY`, then run
+`AWS_PROFILE=<profile> npm run serverless-deploy`.

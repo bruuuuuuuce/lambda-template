@@ -1,6 +1,6 @@
 service: lambdas-serverless
 
-frameworkVersion: '3'
+frameworkVersion: '4'
 
 configValidationMode: error
 
@@ -13,9 +13,6 @@ provider:
   stackTags:
     service: api
     environment: prod
-
-plugins:
-  - serverless-better-credentials
 
 functions:
   users-serverless:
