@@ -9,6 +9,7 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
+    "diff": "cdk diff",
     "deploy": "cdk deploy"
   },
   "devDependencies": {

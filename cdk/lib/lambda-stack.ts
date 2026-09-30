@@ -18,7 +18,10 @@ export class LambdaStack extends cdk.Stack {
           )
       ),
       runtime: lambda.Runtime.NODEJS_18_X,
-      functionName: 'users-cdk-boilerplate'
+      functionName: 'users-cdk-boilerplate',
+      environment: {
+        NODE_OPTIONS: '--enable-source-maps',
+      }
     });
 
     const productsLambda = new lambda.Function(this, 'products-lambda', {
@@ -32,7 +35,10 @@ export class LambdaStack extends cdk.Stack {
           )
       ),
       runtime: lambda.Runtime.NODEJS_18_X,
-      functionName: 'products-cdk-boilerplate'
+      functionName: 'products-cdk-boilerplate',
+      environment: {
+        NODE_OPTIONS: '--enable-source-maps',
+      }
     });
   }
 }
