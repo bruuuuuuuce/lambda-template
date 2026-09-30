@@ -1,5 +1,5 @@
 import * as log from 'lambda-log';
-import {Context} from 'aws-lambda';
+import type {Context} from 'aws-lambda';
 
 interface Props {
     lambdaContext: Context;

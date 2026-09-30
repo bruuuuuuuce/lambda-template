@@ -1,4 +1,4 @@
-import {Context} from "aws-lambda";
+import type {Context} from "aws-lambda";
 import log, {initLogger} from '../common/logger';
 
 export const handler = async (event: unknown, context: Context) => {
